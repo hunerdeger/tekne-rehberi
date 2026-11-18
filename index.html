@@ -7,6 +7,7 @@
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="apple-touch-icon" href="icon-180.png">
 <title>Tekne Rehberi</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2214%22%20fill%3D%22%230E2A47%22/%3E%3Csvg%20x%3D%226%22%20y%3D%2212%22%20width%3D%2252%22%20height%3D%2240%22%20viewBox%3D%2230%2014%20166%2096%22%3E%3Cpath%20d%3D%22M60%2024%20L60%20100%20M60%20100%20C%2072%2098%2088%2092%20100%2080%20C%20104%2062%20106%2046%20108%2030%20L60%2024%22%20fill%3D%22none%22%20stroke%3D%22%23FFFFFF%22%20stroke-width%3D%229%22%20stroke-linejoin%3D%22round%22%20stroke-linecap%3D%22round%22/%3E%3Cpath%20d%3D%22M132%2024%20V100%20M170%2024%20V100%22%20stroke%3D%22%23FFFFFF%22%20stroke-width%3D%229%22%20stroke-linecap%3D%22round%22/%3E%3Cpath%20d%3D%22M44%2066%20H186%22%20stroke%3D%22%237FB6F0%22%20stroke-width%3D%224.05%22%20stroke-linecap%3D%22round%22/%3E%3C/svg%3E%3C/svg%3E">
 <style>
   :root { --ink:#1d1d1f; --ink2:#424245; --ink3:#86868b; --soft:#f5f5f7; --blue:#0071e3; --line:rgba(0,0,0,.08); }
   * { box-sizing: border-box; }
@@ -18,6 +19,7 @@
   .topr { display:flex; align-items:center; gap:16px; flex-wrap:wrap; }
   .packbtn { border:0; background:#0071e3; color:#fff; font:inherit; font-size:13.5px; padding:8px 14px; border-radius:980px; cursor:pointer; }
   .packbtn:disabled { opacity:.5; cursor:default; }
+  h1 .dhlogo { margin-right: 12px; vertical-align: -4px; }
   .count { font-size: 14px; color: var(--ink2); font-variant-numeric: tabular-nums; }
   .count b { color: var(--ink); }
   .row { display:flex; flex-wrap: wrap; align-items:center; gap: 8px 14px; padding: 10px 0; }
@@ -67,7 +69,7 @@
 </style></head>
 <body>
 <header><div class="wrap">
-  <div class="top"><h1>Tekne Referans Rehberi</h1><div class="topr"><div class="count" id="count"></div><button class="packbtn" id="packBtn" type="button" hidden>Yachtpedia için fotoğraf paketi</button></div></div>
+  <div class="top"><h1><svg class="dhlogo" viewBox="30 14 166 96" height="28" role="img" aria-label="Değer Hüner Yacht Design"><path d="M60 24 L60 100 M60 100 C 72 98 88 92 100 80 C 104 62 106 46 108 30 L60 24" fill="none" stroke="#0E2A47" stroke-width="8" stroke-linejoin="round" stroke-linecap="round"/><path d="M132 24 V100 M170 24 V100" stroke="#0E2A47" stroke-width="8" stroke-linecap="round"/><path d="M44 66 H186" stroke="#2F7FD1" stroke-width="3.60" stroke-linecap="round"/></svg>Tekne Referans Rehberi</h1><div class="topr"><div class="count" id="count"></div><button class="packbtn" id="packBtn" type="button" hidden>Yachtpedia için fotoğraf paketi</button></div></div>
   <div class="row"><span class="lbl">Boy</span><div class="chips" id="lenChips"></div>
     <label class="custom">ya da <input id="lenIn" type="text" inputmode="decimal" placeholder="ör. 9,7"> m</label></div>
   <div class="row"><span class="lbl">Aralık</span><div class="chips" id="tolChips"></div>
